@@ -73,7 +73,6 @@ def create_daily_registered_rent_df(df):
 
 # Creating season_rent_df
 
-
 def create_season_rent_df(df):
     season_rent_df = df.groupby(
         by='season')[['registered', 'casual']].sum().reset_index()
